@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FraudGuard AI - Offline Scam Detector</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/transformers@2.16.2"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FraudGuard AI</h1>
+      <p>Offline AI Email Scam Detector • Built with Python + JS</p>
+    </header>
+
+    <main>
+      <textarea id="emailInput" placeholder="Paste suspicious email here..."></textarea>
+      <button onclick="analyze()">SCAN EMAIL</button>
+
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Downloading AI Model (180 MB) - One Time Only...</p>
+      </div>
+
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <p>Live on GitHub Pages • 100% Offline After First Load</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
